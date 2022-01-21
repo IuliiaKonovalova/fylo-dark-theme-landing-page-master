@@ -96,6 +96,17 @@ body {
 
 .navbar__components {
   display: flex;
+  font-family: var(--ff-accent);
+
+}
+
+.navbar__item {
+  margin-left: 5vw;
+}
+
+.navbar__item:hover {
+  text-decoration: underline;
+  font-weight: var(--fw-bold);
 }
 
 .hero {
@@ -105,6 +116,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero__image--container {
+  margin-bottom: 14em;
 }
 
 .features {}
