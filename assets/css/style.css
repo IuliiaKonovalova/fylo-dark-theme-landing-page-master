@@ -175,4 +175,11 @@ body {
   padding: 1em 5.5em 1.1em 5.5em;
 }
 
-.features {}
+.features {
+  max-width: 40%;
+  margin: 5em auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  text-align: center;
+}
