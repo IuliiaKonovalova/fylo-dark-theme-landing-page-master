@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif; */
+:root {
+  /* testimonials background */
+  --clr-primary--100: hsl(219, 30%, 18%);
+  /* intro and email sign up background */
+  --clr-primary--300: hsl(217, 28%, 15%);
+  /* main background */
+  --clr-primary--500: hsl(218, 28%, 13%);
+  /* footer background */
+  --clr-primary--900: hsl(216, 53%, 9%);
+  /* inside call-to-action gradient */
+  --clr-accent--300: hsl(176, 68%, 64%);
+  /* inside call-to-action gradient */
+  --clr-accent--500: hsl(198, 60%, 50%);
+  /* error */
+  --clr-accent--900: hsl(0, 100%, 63%);
+  --clr-neutral--100: hsl(0, 0%, 100%);
+  --fs: 0.9375rem;
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-accent: 'Raleway', sans-serif;
+  --br: 0.65em;
+}
