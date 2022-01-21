@@ -177,7 +177,7 @@ body {
 }
 
 .features {
-  max-width: 40%;
+  max-width: 60rem;
   margin: 5em auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -187,4 +187,15 @@ body {
 
 .card {
   max-width: 25.7rem;
+}
+
+.card__image--container {
+  width: 6rem;
+  height: 6rem;
+  margin: 1em auto;
+}
+
+.card__image--container img {
+  display: block;
+  object-fit: contain;
 }
