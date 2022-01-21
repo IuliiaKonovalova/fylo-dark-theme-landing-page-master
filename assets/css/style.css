@@ -10,9 +10,9 @@
   /* footer background */
   --clr-primary--900: hsl(216, 53%, 9%);
   /* inside call-to-action gradient */
-  --clr-accent--300: hsl(176, 68%, 64%);
+  --clr-accent--300: #65e2d9;
   /* inside call-to-action gradient */
-  --clr-accent--500: hsl(198, 60%, 50%);
+  --clr-accent--500: #339ecc;
   /* error */
   --clr-accent--900: hsl(0, 100%, 63%);
   --clr-neutral--100: hsl(0, 0%, 100%);
@@ -20,7 +20,7 @@
   --fs: 0.9375rem;
   --ff-primary: 'Open Sans', sans-serif;
   --ff-accent: 'Raleway', sans-serif;
-  --br: 0.65em;
+  --br: 1.75em;
 }
 
 
@@ -149,6 +149,30 @@ body {
   line-height: 1.6rem;
   max-width: 80%;
   margin-bottom: 1.5em;
+}
+
+.btn {
+  font-weight: 700;
+  color: var(--clr-neutral--100);
+  background: rgb(101, 226, 217, 1);
+  border: none;
+  border-radius: var(--br);
+  outline: none;
+  margin: 0 auto;
+  padding: 1em 2em 1.1em 2em;
+  background: linear-gradient(90deg, rgba(101, 226, 217, 1) 0%, rgba(60, 189, 245, 0.664) 100%);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  background: rgb(127, 221, 215);
+}
+
+.hero__button {
+  padding: 1em 5.5em 1.1em 5.5em;
 }
 
 .features {}
