@@ -199,3 +199,8 @@ body {
   display: block;
   object-fit: contain;
 }
+
+.feature__name {
+  font-size: 1.3rem;
+  padding-bottom: 0.5em;
+}
