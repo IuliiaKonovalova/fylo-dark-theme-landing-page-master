@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="https://kit.fontawesome.com/9237ee6e28.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,7 +32,7 @@
     <ul class="navbar__components">
       <ul class="navbar__item"><a href="#features">Features</a></ul>
       <ul class="navbar__item"><a href="#team">Team</a></ul>
-      <ul class="navbar__item"><a href="#">Sign In</a></ul>
+      <ul class="navbar__item"><a href="#contact">Sign In</a></ul>
     </ul>
   </header>
   <!-- Main -->
@@ -114,7 +114,7 @@
           Securely share files and folders with friends, family and colleagues for live collaboration. No email
           attachments required.
         </p>
-        <a href="#">
+        <a href="#contact">
           See how Fylo works
           <img src="" alt="">
         </a>
@@ -176,40 +176,109 @@
         </div>
       </div>
     </section>
+    <section class="contanct" id="contact">
+      <div class="contanct__container">
+        <h2 class="form__title">Get early access today</h2>
+        <p class="form__incentive description">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+        <form class="form" id="form">
+          <label for="email"></label>
+          <input type="email" id="email" class="form__input">
+          <button type="submit" class="form_button btn">
+            Get started for free
+          </button>
+        </form>
+      </div>
+    </section>
 
   </main>
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="logo__container">
+        <img src="" alt="">
+      </div>
+      <div class="footer__main--container">
 
+        <div class="location">
+          <img src="" alt="">
+          <div class="location__description description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </div>
+        </div>
 
+        <ul class="footer__links">
+          <li class="footer__link">
+            <img src="" alt="">
+            <div>+1-543-123-4567</div>
+          </li>
+          <li class="footer__link">
+            <img src="" alt="">
+            <div>example@fylo.com</div>
+          </li>
+        </ul>
 
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+        <ul class="footer__links">
+          <li class="footer__link">
+            <a href="#">About us</a>
+          </li>
+          <li class="footer__link">
+            <a href="#">Jobs</a>
+          </li>
+          <li class="footer__link">
+            <a href="#">Press</a>
+          </li>
+          <li class="footer__link">
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="footer__link">
+            <a href="#">Terms</a>
+          </li>
+          <li class="footer__link">
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+        <ul class="footer__links--social">
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page"><i
+                class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page"><i
+                class="fab fa-facebook-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="attribution">
+      <li class="credits_frontend-mentor">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank"
+          aria-label="Visit FrontendMentor page">
+          Frontend Mentor
+        </a>.
+      </li>
+      <li class="credits_myself">
+        Coded by
+        <a href="https://github.com/IuliiaKonovalova" rel="noopener" target="_blank"
+          aria-label="Visit Iuliia Konovalova github page">
+          Iulia Konovalova
+        </a>.
+      </li>
+    </ul>
   </footer>
+
 </body>
 
 </html>
