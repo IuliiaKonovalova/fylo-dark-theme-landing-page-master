@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap');
 
 :root {
   /* testimonials background */
@@ -16,12 +16,11 @@
   /* error */
   --clr-accent--900: hsl(0, 100%, 63%);
   --clr-neutral--100: hsl(0, 0%, 100%);
+  --clr-neutral--300: hsla(0, 0%, 100%, 0.719);
   --fs: 0.9375rem;
   --ff-primary: 'Open Sans', sans-serif;
   --ff-accent: 'Raleway', sans-serif;
   --br: 0.65em;
-  --fw-light: 400;
-  --fw-bold: 700;
 }
 
 
@@ -44,7 +43,6 @@ h2,
 p {
   margin: 0;
   padding: 0;
-  font-family: var(--ff-primary);
 }
 
 ul {
@@ -67,7 +65,7 @@ a {
 /* --- Body --- */
 body {
   background-color: var(--clr-primary--500);
-  color: var(--clr-neutral--100);
+  color: var(--clr-neutral--300);
   font-family: var(--ff-primary);
   font-weight: var(--fw-light);
   font-size: var(--fs);
@@ -87,11 +85,11 @@ body {
 /* --- Navbar --- */
 .navbar {
   display: flex;
-  max-width: 100rem;
+  max-width: 120rem;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0;
+  padding: 2em 2em;
 }
 
 .navbar__components {
@@ -106,20 +104,51 @@ body {
 
 .navbar__item:hover {
   text-decoration: underline;
-  font-weight: var(--fw-bold);
+  font-weight: 700;
 }
 
+/* hero */
 .hero {
-  max-width: 100rem;
+  max-width: 40%;
   margin: 5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero__image--container {
-  margin-bottom: 14em;
+  margin: 0 4em;
+  max-width: 70rem;
+}
+
+.hero__image--container img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-neutral--100);
+  margin: 1.2em;
+  font-family: var(--ff-accent);
+  line-height: 3rem;
+}
+
+.description {
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+
+}
+
+.hero__description {
+  font-size: 1.05rem;
+  line-height: 1.6rem;
+  max-width: 80%;
+  margin-bottom: 1.5em;
 }
 
 .features {}
