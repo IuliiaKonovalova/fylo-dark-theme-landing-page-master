@@ -136,18 +136,19 @@ body {
   margin: 1.2em;
   font-family: var(--ff-accent);
   line-height: 3rem;
+  max-width: 40rem;
 }
 
 .description {
   font-weight: 500;
   letter-spacing: 0.02rem;
-
+  line-height: 1.4rem;
 }
 
 .hero__description {
   font-size: 1.05rem;
-  line-height: 1.6rem;
-  max-width: 80%;
+  line-height: 1.7rem;
+  max-width: 36rem;
   margin-bottom: 1.5em;
 }
 
@@ -182,4 +183,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
   text-align: center;
+}
+
+.card {
+  max-width: 25.7rem;
 }
