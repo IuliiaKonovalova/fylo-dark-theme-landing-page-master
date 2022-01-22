@@ -161,7 +161,7 @@ body {
   border-radius: var(--br);
   outline: none;
   margin: 0 auto;
-  padding: 1em 2em 1.1em 2em;
+  padding: 1em 2.5em 1.1em 2.5em;
   background: linear-gradient(90deg, rgba(101, 226, 217, 1) 0%, rgba(60, 189, 245, 0.664) 100%);
 }
 
@@ -327,4 +327,72 @@ body {
 
 .testimonail__author--position {
   font-size: 0.6rem;
+}
+
+/* Contact */
+
+.contact {
+  position: relative;
+  height: 10rem;
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__container {
+  position: absolute;
+  top: 0;
+  background-color: var(--clr-primary--300);
+  padding: 3em 4.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form__title {
+  font-size: 2rem;
+  color: var(--clr-neutral--100);
+  font-family: var(--ff-accent);
+}
+
+.form__incentive {
+  max-width: 40rem;
+  padding: 2em 0;
+}
+
+/* Form */
+.form {
+  display: flex;
+  margin-top: 0.5em;
+  border-radius: 0.3rem;
+}
+
+.form__input {
+  margin-right: 1.2em;
+  padding: 1em 2.5em 1.1em 2.5em;
+  border-radius: var(--br);
+  width: 30rem;
+  border: 1px solid var(--clr-primary--100);
+  outline: none;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input::placeholder {
+  color: rgb(161, 161, 161)
+}
+
+.form__input:not(:placeholder-shown) {
+  color: black;
+  font-weight: 700;
+}
+
+.form__button {
+  margin-left: 1.2em;
 }
