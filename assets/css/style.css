@@ -275,8 +275,56 @@ body {
 
 .testimonials {
   display: flex;
-  max-width: 120rem;
+  max-width: 90rem;
   margin: 10em auto;
   align-items: center;
-  padding: 2em;
+  padding: 0 3em;
+  position: relative;
+}
+
+.quotes {
+  position: absolute;
+  top: -20px;
+  left: 49px;
+  z-index: -1;
+}
+
+.testimonial {
+  background-color: var(--clr-primary--100);
+  margin: 1em;
+  border-radius: 0.3rem;
+  padding: 3em 2em 2em 2em;
+  max-width: 25rem;
+}
+
+.testimonail__author {
+  display: flex;
+  padding-top: 1.5em;
+  align-items: center;
+}
+
+.testimonail__author--image {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1em;
+}
+
+.testimonail__author--image img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.testimonail__author--data {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonail__author--name {
+  font-size: 1rem;
+}
+
+.testimonail__author--position {
+  font-size: 0.6rem;
 }
