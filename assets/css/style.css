@@ -109,13 +109,14 @@ body {
 
 /* hero */
 .hero {
-  max-width: 40%;
+  max-width: 40rem;
   margin: 5em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2em;
 }
 
 .hero__image--container {
@@ -146,10 +147,10 @@ body {
 }
 
 .hero__description {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
   max-width: 36rem;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.9em;
 }
 
 .btn {
@@ -183,6 +184,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
   text-align: center;
+  padding: 2em;
 }
 
 .card {
@@ -203,4 +205,70 @@ body {
 .feature__name {
   font-size: 1.3rem;
   padding-bottom: 0.5em;
+}
+
+/* Team */
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 10em auto;
+  align-items: center;
+  padding: 2em;
+}
+
+.team__image--container {
+  width: 50%;
+  margin-left: auto;
+}
+
+.team__image--container img {
+  display: block;
+  width: 90%;
+  object-fit: contain;
+}
+
+.team__content {
+  width: 40%;
+  margin-right: auto;
+  margin-left: 5em;
+}
+
+.team__content--title {
+  font-size: 2.4rem;
+  max-width: 25rem;
+}
+
+.team__content--description {
+  padding-top: 1.2em;
+  max-width: 39rem;
+}
+
+.team__link {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  color: var(--clr-accent--300);
+  position: relative;
+  width: 100%;
+}
+
+.arrow__icon {
+  display: block;
+  /* margin-left: 0.5em; */
+  position: absolute;
+  left: 9rem;
+  top: 40%;
+}
+
+.team__link::before {
+  content: '';
+  border-bottom: solid 1px var(--clr-accent--300);
+  border-radius: var(--br);
+  position: absolute;
+  left: -1px;
+  width: 10.1rem;
+  top: 75%;
+
 }
