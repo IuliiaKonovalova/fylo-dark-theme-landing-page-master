@@ -529,6 +529,17 @@ body {
   border: 1px solid var(--clr-accent--300);
 }
 
+/* Attributions */
+.attribution {
+  margin: 2em 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 80%, 60%);
+}
+
 @media all and (max-width: 1245px) {
   .team__content {
     width: 46%;
