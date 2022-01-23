@@ -89,7 +89,7 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 2em;
+  padding: 2em 3em;
 }
 
 .navbar__components {
@@ -116,7 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2em;
+  padding: 3em;
 }
 
 .hero__image--container {
@@ -177,6 +177,8 @@ body {
   padding: 1em 5.5em 1.1em 5.5em;
 }
 
+/* Features */
+
 .features {
   max-width: 60rem;
   margin: 5em auto;
@@ -184,7 +186,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
   text-align: center;
-  padding: 2em;
+  padding: 3em;
 }
 
 .card {
@@ -215,7 +217,7 @@ body {
   max-width: 120rem;
   margin: 10em auto;
   align-items: center;
-  padding: 2em;
+  padding: 3em;
 }
 
 .team__image--container {
@@ -232,7 +234,6 @@ body {
 .team__content {
   width: 30%;
   margin-right: auto;
-  margin-left: 5em;
 }
 
 .team__content--title {
@@ -435,15 +436,15 @@ body {
   flex-direction: column;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2em 2em;
+  padding: 2em 3em;
 }
 
-.logo__container {
+.footer__logo--container {
   max-width: 7rem;
   margin-bottom: 4em;
 }
 
-.logo__container img {
+.footer__logo--container img {
   display: block;
   width: 100%;
   object-fit: contain;
@@ -488,7 +489,7 @@ body {
 .footer__link {
   display: flex;
   margin-bottom: 1em;
-  width: 10rem;
+  width: 10wv;
 }
 
 .footer__link:hover {
@@ -523,4 +524,74 @@ body {
 
 .footer__link--social:hover a .fa {
   border: 1px solid var(--clr-accent--300);
+}
+
+@media all and (max-width: 1245px) {
+  .team__content {
+    width: 46%;
+    margin-right: auto;
+  }
+
+  .team__content--title {
+    font-size: 1.8rem;
+    max-width: 30rem;
+  }
+
+  .description {
+    font-weight: 500;
+    letter-spacing: 0.015rem;
+    line-height: 1.2rem;
+  }
+
+  .team__content--description {
+    max-width: 50rem;
+    padding-top: 0.8em;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .footer__main--container {
+    flex-direction: column;
+  }
+
+  .footer__links--container {
+    flex-direction: column;
+  }
+
+  .footer__logo--container {
+    max-width: 12rem;
+    margin-bottom: 4em;
+  }
+
+  .footer__logo--container img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .location {
+    display: flex;
+    max-width: 30rem;
+    margin: 0 0 3em 0;
+  }
+
+  .footer__links {
+    padding-left: 0;
+    align-items: left;
+    margin-bottom: 3em;
+  }
+
+
+  .footer__links--social {
+    justify-content: center;
+  }
+
+  .footer__link--social {
+    margin-left: 0;
+  }
+
+  .footer__link--social:not(:first-child) {
+    margin-left: 2em;
+  }
+
 }
