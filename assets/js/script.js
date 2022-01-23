@@ -23,9 +23,11 @@ const submission = function (e) {
   const email = emailInput.value;
   if (!validateEmail(email)) {
     submissionForm.classList.add("error");
+    submissionForm.classList.remove("success");
   } else {
     emailInput.value = "";
     submissionForm.classList.remove("error");
+    submissionForm.classList.add("success");
   }
 };
 

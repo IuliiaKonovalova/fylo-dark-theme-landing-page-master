@@ -423,7 +423,20 @@ body {
   left: 30px;
 }
 
+.form__success {
+  display: none;
+  position: absolute;
+  color: var(--clr-accent--300);
+  font-weight: 700;
+  bottom: -25px;
+  left: 30px;
+}
+
 .form.error .form__error {
+  display: block;
+}
+
+.form.success .form__success {
   display: block;
 }
 
