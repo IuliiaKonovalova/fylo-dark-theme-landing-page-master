@@ -254,6 +254,14 @@ body {
   width: 100%;
 }
 
+.team__link:hover {
+  color: white;
+}
+
+.team__link:hover .arrow__icon {
+  color: white;
+}
+
 .arrow__icon {
   display: block;
   position: absolute;
@@ -269,6 +277,10 @@ body {
   left: -1px;
   width: 10.1rem;
   top: 75%;
+}
+
+.team__link:hover::before {
+  border-bottom: solid 1px white;
 }
 
 /* Testimonials */
@@ -503,4 +515,12 @@ body {
   border: 1px solid white;
   color: transparent;
   border-radius: 0.8em;
+}
+
+.footer__link--social:hover a .fab {
+  color: var(--clr-accent--300);
+}
+
+.footer__link--social:hover a .fa {
+  border: 1px solid var(--clr-accent--300);
 }
