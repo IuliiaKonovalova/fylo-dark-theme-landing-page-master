@@ -95,11 +95,11 @@ body {
 .navbar__components {
   display: flex;
   font-family: var(--ff-accent);
-
 }
 
 .navbar__item {
   margin-left: 5vw;
+  font-size: 1.2rem;
 }
 
 .navbar__item:hover {
@@ -703,7 +703,6 @@ body {
 
   .contact__container {
     padding: 3em 3em;
-    /* padding: 2em 1em; */
   }
 
   .form__title {
@@ -738,4 +737,61 @@ body {
     bottom: unset;
   }
 
+}
+
+@media all and (max-width: 485px) {
+
+  .navbar {
+    padding: 1.5em 2em;
+  }
+
+  .navbar__item {
+    margin-left: 4vw;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    margin: 2em auto;
+    padding: 3em;
+  }
+
+  .hero__image--container {
+    margin: 0;
+  }
+
+  .hero__title {
+    font-size: 1.3rem;
+    margin: 1.2em 0;
+  }
+
+  .hero__description {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.5em;
+  }
+
+  .testimonials {
+    margin: 5em auto;
+    padding: 0 1em;
+  }
+
+  .contact__container {
+    padding: 2em 1em;
+    margin: 1em;
+  }
+
+  .form__input {
+    width: 13rem;
+  }
+
+  .form__button {
+    width: 13rem;
+  }
+}
+
+@media all and (max-width: 349px) {
+
+  .hero__button {
+    padding: 0.5em 3.5em 0.6em 3.5em;
+  }
 }
