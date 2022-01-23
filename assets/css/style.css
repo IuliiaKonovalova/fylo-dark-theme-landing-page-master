@@ -259,7 +259,7 @@ body {
 }
 
 .team__link:hover .arrow__icon {
-  color: white;
+  filter: grayscale(100%);
 }
 
 .arrow__icon {
