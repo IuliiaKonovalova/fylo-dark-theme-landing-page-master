@@ -195,12 +195,13 @@ body {
 
 .card__image--container {
   width: 6rem;
-  height: 6rem;
+  /* height: 6rem; */
   margin: 1em auto;
 }
 
 .card__image--container img {
   display: block;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -629,6 +630,16 @@ body {
     margin-right: 6vw;
   }
 
+  .card {
+    margin-bottom: 2em;
+  }
+
+  .card__image--container {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+  }
+
   .team {
     all: unset;
     width: 90%;
@@ -790,8 +801,37 @@ body {
 }
 
 @media all and (max-width: 349px) {
+  .navbar {
+    padding: 1.2em 1.5em;
+  }
+
+  .navbar__item {
+    font-size: 0.7rem;
+  }
+
+  .logo__container {
+    width: 3rem;
+  }
 
   .hero__button {
     padding: 0.5em 3.5em 0.6em 3.5em;
+  }
+
+  .team {
+    text-align: center;
+  }
+
+  .team__link {
+    justify-content: center;
+  }
+
+  .arrow__icon {
+    left: 60vw;
+    margin-left: 1em;
+  }
+
+  .team__link::before {
+    left: 5vw;
+    width: 90%;
   }
 }
