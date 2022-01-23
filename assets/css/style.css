@@ -207,6 +207,7 @@ body {
 .feature__name {
   font-size: 1.3rem;
   padding-bottom: 0.5em;
+  color: white;
 }
 
 /* Team */
@@ -239,6 +240,7 @@ body {
 .team__content--title {
   font-size: 2.4rem;
   max-width: 25rem;
+  color: white;
 }
 
 .team__content--description {
@@ -533,7 +535,7 @@ body {
   }
 
   .team__content--title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     max-width: 30rem;
   }
 
@@ -596,6 +598,86 @@ body {
 }
 
 @media all and (max-width: 938px) {
+  .logo__container {
+    width: 5rem;
+  }
+
+  .logo__container img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .hero__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .features {
+    all: unset;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+  .team {
+    all: unset;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 8em;
+  }
+
+  .team__image--container {
+    all: unset;
+    margin-bottom: 4em;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+
+  .team__image--container img {
+    width: 100%;
+  }
+
+  .team__content {
+    all: unset;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+  .team__content--title {
+    font-size: 1.4rem;
+    max-width: 40rem;
+  }
+
+  .team__content--description {
+    padding-top: 1.2em;
+    max-width: 39rem;
+  }
+
+  .team__link {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    color: var(--clr-accent--300);
+    position: relative;
+    width: 100%;
+  }
+
+
   .testimonials {
     flex-direction: column;
   }
