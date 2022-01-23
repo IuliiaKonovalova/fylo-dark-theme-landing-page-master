@@ -492,7 +492,12 @@ body {
 .footer__link {
   display: flex;
   margin-bottom: 1em;
-  width: 15vw;
+
+}
+
+.footer__links--contact {
+  width: 20vw;
+  margin-left: 2em;
 }
 
 .footer__link:hover {
